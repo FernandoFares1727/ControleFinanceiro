@@ -10,6 +10,7 @@ import _moneyIcon from './images/dollar.svg'
 // js imports
 
 import Global from './components/global/index.js'
+import AddForm from './components/add-form/index.js'
 
 function App() {
   return(
@@ -19,21 +20,29 @@ function App() {
       </header>
 
       <div className="App-Body">
-          <Global 
-            title = "Entrada" 
-            value = {0}
-            moneyIcon = {_moneyIcon}
-            />
-          <Global 
-            title = "Saídas"
-            value = {0}
-            moneyIcon = {_moneyIcon}
-          />
-          <Global 
-            title = "Total"
-            value = {0}
-            moneyIcon = {_moneyIcon}
-          />
+
+        <div className='App-Body-Components'>
+          <div className='App-Body-Global'>
+            <Global 
+                title = "Entrada" 
+                value = {0}
+                moneyIcon = {_moneyIcon}
+                />
+            <Global 
+                title = "Saídas"
+                value = {0}
+                moneyIcon = {_moneyIcon}
+                />
+            <Global 
+                title = "Total"
+                value = {0}
+                moneyIcon = {_moneyIcon}
+                />
+          </div>
+
+          <AddForm />
+        </div>
+
       </div>
 
     </div>

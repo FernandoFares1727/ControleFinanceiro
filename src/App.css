@@ -25,7 +25,19 @@ body {
     flex-grow: 1;
     background-color: #D3D3D3;
     display: flex;
-    gap: 15px;
     justify-content: center;
+  }
+
+  .App-Body-Components
+  {
+    max-width: 870px;
+  }
+
+  .App-Body-Global
+  {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
   

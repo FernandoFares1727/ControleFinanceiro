@@ -1,0 +1,10 @@
+
+.form-description-value div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-description-value div input {
+  border-radius: 5px;
+  border: 1px solid ;
+}

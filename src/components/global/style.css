@@ -1,0 +1,29 @@
+.global 
+{
+    margin-top: 15px;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Altera a posição do .global-amount */
+}
+
+.global-title
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.global-amount 
+{
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+}

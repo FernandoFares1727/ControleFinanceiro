@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+
+// css imports
+
+import './App.css'
+
+// img imports
+
+import _moneyIcon from './images/dollar.svg'
+
+// js imports
+
+import Global from './components/global/index.js'
 
 function App() {
-  return (
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <p>Controle Financeiro</p>
       </header>
+
+      <div className="App-Body">
+          <Global 
+            title = "Entrada" 
+            value = {0}
+            moneyIcon = {_moneyIcon}
+            />
+          <Global 
+            title = "Saídas"
+            value = {0}
+            moneyIcon = {_moneyIcon}
+          />
+          <Global 
+            title = "Total"
+            value = {0}
+            moneyIcon = {_moneyIcon}
+          />
+      </div>
+
     </div>
   );
 }
